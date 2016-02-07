@@ -1,0 +1,7 @@
+**/*
+!src/**/*
+!salte-filter.js
+!salte-filter.js.map
+!CHANGELOG.md
+!CONTRIBUTING.md
+!README.md
