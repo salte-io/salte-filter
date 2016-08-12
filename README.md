@@ -23,6 +23,48 @@ Or `require('salte-filter')` from your code.
 
 ## Documentation
 
+### Filters
+
+```javascript
+const component = {
+  require: {
+    parent: '^salteFilter'
+  },
+  controller: () => {
+    const view = this;
+
+    view.filter = (item) => {
+      // ...
+    };
+
+    view.$onInit = () => {
+      view.parent.addFilter(view.filter);
+    };
+  }
+}
+```
+
+### Filter Listeners
+
+```javascript
+const component = {
+  require: {
+    parent: '^salteFilter'
+  },
+  controller: () => {
+    const view = this;
+
+    view.onFilter = (filteredData) => {
+      // ...
+    };
+
+    view.$onInit = () => {
+      view.parent.addFilterListener(view.onFilter);
+    };
+  }
+}
+```
+
 Documentation is available at [Salte Docs][salte-docs].
 
 ## License
