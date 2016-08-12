@@ -1,4 +1,6 @@
 # Salte Filter
+
+[![Join the chat at https://gitter.im/salte-io/salte-filter](https://badges.gitter.im/salte-io/salte-filter.svg)](https://gitter.im/salte-io/salte-filter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![NPM Version][npm-version-image]][npm-url]
 [![NPM Downloads][npm-downloads-image]][npm-url]
 [![Travis][travis-ci-image]][travis-ci-url]
