@@ -65,8 +65,6 @@ const component = {
 }
 ```
 
-Documentation is available at [Salte Docs][salte-docs].
-
 ## License
 
 The MIT License
@@ -100,8 +98,3 @@ THE SOFTWARE.
 
 [coveralls-image]: https://img.shields.io/coveralls/salte-io/salte-filter/master.svg
 [coveralls-url]: https://coveralls.io/github/salte-io/salte-filter
-
-[david-dev-dependencies-image]: https://img.shields.io/david/dev/salte-io/salte-filter.svg
-[david-dev-dependencies-url]: https://david-dm.org/salte-io/salte-filter#info=devDependencies
-
-[salte-docs]: http://docs.salte.io
