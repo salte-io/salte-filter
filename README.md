@@ -1,6 +1,5 @@
 # Salte Filter
-
-[![Join the chat at https://gitter.im/salte-io/salte-filter](https://badges.gitter.im/salte-io/salte-filter.svg)](https://gitter.im/salte-io/salte-filter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Slack Status][slack-image]][slack-url]
 [![NPM Version][npm-version-image]][npm-url]
 [![NPM Downloads][npm-downloads-image]][npm-url]
 [![Travis][travis-ci-image]][travis-ci-url]
@@ -10,7 +9,7 @@ Registers filter components allowing for a single input and output!
 
 ## Install
 
-You can install this package with `npm`
+You can install this package either with `npm` or with `bower`.
 
 ## npm
 
@@ -22,6 +21,16 @@ Then add a `<script>` to your index.html:
 <script src="/node_modules/salte-filter/salte-filter.js"></script>
 ```
 Or `require('salte-filter')` from your code.
+
+## bower
+
+```sh
+$ bower install salte-io/salte-filter
+```
+Then add a `<script>` to your index.html:
+```html
+<script src="/bower_components/salte-seed/salte-seed.js"></script>
+```
 
 ## Example
 
@@ -107,6 +116,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+[slack-image]: https://salte-slack.herokuapp.com/badge.svg
+[slack-url]: https://salte-slack.herokuapp.com/
 
 [npm-version-image]: http://img.shields.io/npm/v/salte-filter.svg?style=flat
 [npm-downloads-image]: http://img.shields.io/npm/dm/salte-filter.svg?style=flat
