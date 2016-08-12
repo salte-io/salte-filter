@@ -2,6 +2,5 @@ node_modules
 bower_components
 coverage
 docs
-salte-filter.js
-salte-filter.js.map
+dist
 npm-debug.log
