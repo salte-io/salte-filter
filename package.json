@@ -1,6 +1,6 @@
 {
   "name": "salte-filter",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "dist/salte-filter.js",
   "description": "Registers filter components allowing for a single input and output!",
   "homepage": "https://github.com/salte-io/salte-filter",
@@ -33,9 +33,6 @@
     "semantic-release": "semantic-release pre && npm run build:prod && npm publish && npm run publish-latest && semantic-release post"
   },
   "license": "MIT",
-  "peerDependencies": {
-    "angular": "^1.2.x || >= 1.4.0-beta.0 || >= 1.5.0-beta.0"
-  },
   "devDependencies": {
     "angular": "1.5.8",
     "angular-mocks": "1.5.8",
