@@ -52,6 +52,9 @@ describe('component(salte-filter)', () => {
       controller.addFilterListener(listener);
       controller.filter();
       expect(listener.callCount).toEqual(1);
+      controller.removeFilterListener(listener);
+      controller.filter();
+      expect(listener.callCount).toEqual(1);
     });
   });
 });

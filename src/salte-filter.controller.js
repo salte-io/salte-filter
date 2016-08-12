@@ -40,6 +40,13 @@ export default class SalteFilter {
     this.listeners.push(listener);
   }
 
+  removeFilterListener(listener) {
+    const index = this.listeners.indexOf(listener);
+    if (index !== -1) {
+      this.listeners.splice(index, 1);
+    }
+  }
+
   removeFilter(filter) {
     const index = this.filters.indexOf(filter);
     if (index !== -1) {

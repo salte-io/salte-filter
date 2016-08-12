@@ -9,6 +9,9 @@
 
 <!-- Example: The page turns pink. -->
 
+### Live Demo
+<!-- Example: https://jsbin.com/guyoyelupe/edit?html,js,output -->
+
 ### Steps to reproduce
 
 <!-- Example
