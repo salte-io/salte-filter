@@ -1,6 +1,6 @@
 {
   "name": "salte-filter",
-  "version": "0.0.0-semantically-released.0",
+  "version": "1.0.4",
   "main": "dist/salte-filter.js",
   "description": "Registers filter components allowing for a single input and output!",
   "homepage": "https://github.com/salte-io/salte-filter",
