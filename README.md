@@ -21,9 +21,16 @@ Then add a `<script>` to your index.html:
 ```
 Or `require('salte-filter')` from your code.
 
+## Example
+
+[Live Demo](https://jsbin.com/guyoyelupe/edit?html,js,output)
+
 ## Documentation
 
-### Filters
+`salteFilter` must be required into your component in order to be used
+
+### `(add/remove)Filter`
+* **`filter`:** A filter to be called anytime the filter function is called
 
 ```javascript
 const component = {
@@ -34,17 +41,21 @@ const component = {
     const view = this;
 
     view.filter = (item) => {
-      // ...
+      // ... returns the item if the function returns truthy
     };
 
     view.$onInit = () => {
+      // This will add the filter
       view.parent.addFilter(view.filter);
+      // This will remove the filter
+      view.parent.removeFilter(view.filter);
     };
   }
 }
 ```
 
-### Filter Listeners
+### `(add/remove)FilterListener`
+* **`listener`:** A listener to be called anytime the filter function is called
 
 ```javascript
 const component = {
@@ -59,11 +70,17 @@ const component = {
     };
 
     view.$onInit = () => {
+      // This will add the listener
       view.parent.addFilterListener(view.onFilter);
+      // This will remove the listener
+      view.parent.removeFilterListener(view.onFilter);
     };
   }
 }
 ```
+
+### `filter`
+Runs all of the filters, useful for triggering a filter when an input value is changed
 
 ## License
 
