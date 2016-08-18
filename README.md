@@ -4,6 +4,7 @@
 [![NPM Downloads][npm-downloads-image]][npm-url]
 [![Travis][travis-ci-image]][travis-ci-url]
 [![Coveralls][coveralls-image]][coveralls-url]
+[![Commitizen friendly][commitizen-image]][commitizen-url]
 
 Registers filter components allowing for a single input and output!
 
@@ -29,7 +30,7 @@ $ bower install salte-io/salte-filter
 ```
 Then add a `<script>` to your index.html:
 ```html
-<script src="/bower_components/salte-seed/salte-seed.js"></script>
+<script src="/bower_components/salte-filter/salte-filter.js"></script>
 ```
 
 ## Example
@@ -129,3 +130,6 @@ THE SOFTWARE.
 
 [coveralls-image]: https://img.shields.io/coveralls/salte-io/salte-filter/master.svg
 [coveralls-url]: https://coveralls.io/github/salte-io/salte-filter
+
+[commitizen-image]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
+[commitizen-url]: http://commitizen.github.io/cz-cli/
