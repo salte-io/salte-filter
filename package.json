@@ -1,6 +1,6 @@
 {
   "name": "salte-filter",
-  "version": "1.0.8",
+  "version": "1.0.12",
   "main": "dist/salte-filter.js",
   "description": "Registers filter components allowing for a single input and output!",
   "homepage": "https://github.com/salte-io/salte-filter",
@@ -33,35 +33,49 @@
     "semantic-release": "semantic-release pre && npm run build:prod && npm publish && npm run publish-latest && semantic-release post"
   },
   "license": "MIT",
+  "peerDependencies": {
+    "angular": ">= 1.5.x < 2"
+  },
   "devDependencies": {
     "angular": "1.5.8",
     "angular-mocks": "1.5.8",
-    "babel-core": "6.11.4",
-    "babel-loader": "6.2.4",
-    "babel-preset-es2015": "6.9.0",
-    "coveralls": "^2.11.12",
-    "eslint": "3.1.1",
+    "babel-core": "6.13.2",
+    "babel-loader": "6.2.5",
+    "babel-preset-es2015": "6.13.2",
+    "coveralls": "2.11.12",
+    "cz-conventional-changelog": "1.2.0",
+    "eslint": "3.3.1",
     "eslint-config-google": "0.6.0",
-    "eslint-loader": "1.4.1",
-    "eslint-plugin-jasmine": "^1.8.1",
+    "eslint-loader": "1.5.0",
+    "eslint-plugin-jasmine": "1.8.1",
     "html-loader": "0.4.3",
     "isparta-loader": "2.0.0",
-    "jasmine-core": "^2.4.1",
-    "karma": "1.1.2",
+    "jasmine-core": "2.4.1",
+    "karma": "1.2.0",
     "karma-coverage": "1.1.1",
-    "karma-jasmine": "^1.0.2",
-    "karma-mocha-reporter": "2.0.4",
+    "karma-jasmine": "1.0.2",
+    "karma-mocha-reporter": "2.1.0",
     "karma-phantomjs-launcher": "1.0.1",
-    "karma-sinon": "^1.0.5",
+    "karma-sinon": "1.0.5",
     "karma-sourcemap-loader": "0.3.7",
-    "karma-webpack": "1.7.0",
+    "karma-webpack": "1.8.0",
     "ng-annotate-loader": "0.1.1",
-    "phantomjs-prebuilt": "2.1.8",
-    "publish-latest": "^1.1.2",
-    "semantic-release": "^4.3.5",
-    "sinon": "^1.17.5",
+    "phantomjs-prebuilt": "2.1.12",
+    "publish-latest": "1.1.2",
+    "semantic-release": "4.3.5",
+    "sinon": "1.17.5",
     "webpack": "1.13.1",
     "webpack-dev-server": "1.14.1",
     "webpack-stream": "3.2.0"
+  },
+  "jspm": {
+    "peerDependencies": {
+      "angular": "*"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
