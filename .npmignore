@@ -1,6 +1,4 @@
 **/*
 !src/**/*
-!dist
-!CHANGELOG.md
+!dist/**/*
 !CONTRIBUTING.md
-!README.md
