@@ -1,4 +1,9 @@
-var webpackConfig = require('./webpack.test.config.js');
+const webpackConfig = require('./webpack.test.config.js');
+webpackConfig.module.preLoaders.push({
+  test: /\.js$/,
+  exclude: /tests|node_modules/,
+  loader: 'isparta'
+});
 
 module.exports = function(config) {
   config.set({
@@ -14,8 +19,7 @@ module.exports = function(config) {
     ],
 
     preprocessors: {
-      'tests/index.js': ['webpack', 'sourcemap'],
-      'src/**/*.js': ['coverage']
+      'tests/index.js': ['webpack', 'sourcemap']
     },
 
     webpack: webpackConfig,
@@ -44,10 +48,7 @@ module.exports = function(config) {
 
     browsers: ['PhantomJS'],
 
-    captureTimeout: 60000,
-    browserDisconnectTimeout: 7000,
-    browserDisconnectTolerance: 1,
-    browserDisconnectNoActivityTimeout: 60000,
+    browserNoActivityTimeout: 120000,
 
     singleRun: false
   });
