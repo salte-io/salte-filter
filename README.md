@@ -4,7 +4,9 @@
 [![NPM Downloads][npm-downloads-image]][npm-url]
 [![Travis][travis-ci-image]][travis-ci-url]
 [![Coveralls][coveralls-image]][coveralls-url]
+
 [![Commitizen friendly][commitizen-image]][commitizen-url]
+[![semantic-release][semantic-release-image]][semantic-release-url]
 
 Registers filter components allowing for a single input and output!
 
@@ -133,3 +135,6 @@ THE SOFTWARE.
 
 [commitizen-image]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
 [commitizen-url]: http://commitizen.github.io/cz-cli/
+
+[semantic-release-url]: https://github.com/semantic-release/semantic-release
+[semantic-release-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
