@@ -3,12 +3,12 @@ module.exports = {
     pathinfo: true
   },
   module: {
-    preLoaders: [{
+    rules: [{
+      enforce: 'pre',
       test: /\.js$/,
       include: /tests/,
       loader: 'eslint'
-    }],
-    loaders: [{
+    }, {
       test: /\.js$/,
       exclude: /node_modules/,
       loader: 'babel'
