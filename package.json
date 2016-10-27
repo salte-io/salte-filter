@@ -67,7 +67,7 @@
     "publish-latest": "^1.1.2",
     "semantic-release": "^4.3.5",
     "sinon": "^1.17.6",
-    "webpack": "^1.13.2"
+    "webpack": "^2.1.0-beta.25"
   },
   "jspm": {
     "peerDependencies": {
