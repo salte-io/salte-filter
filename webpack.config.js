@@ -12,21 +12,16 @@ module.exports = {
     umdNamedDefine: true
   },
   externals: [{
-    angular: {
-      root: 'angular',
-      commonjs2: 'angular',
-      commonjs: 'angular',
-      amd: 'angular'
-    }
+    angular: 'angular'
   }],
   devtool: 'source-map',
   module: {
-    preLoaders: [{
+    rules: [{
+      enforce: 'pre',
       test: /\.js$/,
       exclude: /node_modules/,
       loader: 'eslint'
-    }],
-    loaders: [{
+    }, {
       test: /\.js$/,
       exclude: /node_modules/,
       loader: 'ng-annotate?map=false!babel'
