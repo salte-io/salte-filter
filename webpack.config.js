@@ -24,7 +24,7 @@ module.exports = {
     }, {
       test: /\.js$/,
       exclude: /node_modules/,
-      loader: 'ng-annotate?map=false!babel'
+      loader: 'ng-annotate!babel'
     }, {
       test: /\.html$/,
       exclude: /node_modules/,
