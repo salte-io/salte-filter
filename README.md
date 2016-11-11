@@ -100,7 +100,7 @@ Runs all of the filters, useful for triggering a filter when an input value is c
 
 The MIT License
 
-Copyright (c) 2012-2016 Salte. https://salte.io
+Copyright (c) 2016 Salte. https://www.salte.io
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
