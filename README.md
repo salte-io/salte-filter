@@ -39,6 +39,14 @@ Then add a `<script>` to your index.html:
 
 [Live Demo](https://jsbin.com/guyoyelupe/edit?html,js,output)
 
+## Usage
+
+```html
+<salte-filter data="myData" filtered-data="myFilteredData">
+  <my-custom-filter></my-custom-filter>
+</salte-filter>
+```
+
 ## Documentation
 
 `salteFilter` must be required into your component in order to be used
