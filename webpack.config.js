@@ -20,15 +20,15 @@ module.exports = {
       enforce: 'pre',
       test: /\.js$/,
       exclude: /node_modules/,
-      loader: 'eslint'
+      loader: 'eslint-loader'
     }, {
       test: /\.js$/,
       exclude: /node_modules/,
-      loader: 'ng-annotate!babel'
+      loader: 'babel-loader'
     }, {
       test: /\.html$/,
       exclude: /node_modules/,
-      loader: 'html'
+      loader: 'html-loader'
     }]
   }
 };
