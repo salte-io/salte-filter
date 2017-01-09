@@ -1,6 +1,6 @@
 {
   "name": "salte-filter",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "main": "dist/salte-filter.js",
   "description": "Registers filter components allowing for a single input and output!",
   "homepage": "https://github.com/salte-io/salte-filter",
@@ -62,12 +62,11 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-spec-reporter": "^0.0.26",
     "karma-webpack": "^1.8.0",
-    "ng-annotate-loader": "^0.2.0",
     "phantomjs-prebuilt": "^2.1.13",
     "publish-latest": "^1.1.2",
     "semantic-release": "^4.3.5",
     "sinon": "^1.17.6",
-    "webpack": "^2.1.0-beta.25"
+    "webpack": "^2.2.0-rc.3"
   },
   "jspm": {
     "peerDependencies": {

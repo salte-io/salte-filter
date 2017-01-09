@@ -39,6 +39,14 @@ Then add a `<script>` to your index.html:
 
 [Live Demo](https://jsbin.com/guyoyelupe/edit?html,js,output)
 
+## Usage
+
+```html
+<salte-filter data="myData" filtered-data="myFilteredData">
+  <my-custom-filter></my-custom-filter>
+</salte-filter>
+```
+
 ## Documentation
 
 `salteFilter` must be required into your component in order to be used
@@ -100,7 +108,7 @@ Runs all of the filters, useful for triggering a filter when an input value is c
 
 The MIT License
 
-Copyright (c) 2012-2016 Salte. https://salte.io
+Copyright (c) 2016 Salte. https://www.salte.io
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
