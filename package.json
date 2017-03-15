@@ -64,7 +64,7 @@
     "phantomjs-prebuilt": "^2.1.13",
     "publish-latest": "^1.1.2",
     "semantic-release": "^6.3.2",
-    "sinon": "^1.17.6",
+    "sinon": "^2.0.0",
     "webpack": "^2.2.0-rc.3",
     "yargs": "^7.0.1"
   },
