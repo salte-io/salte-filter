@@ -46,7 +46,7 @@
     "deindent": "^0.1.0",
     "eslint": "^4.1.0",
     "eslint-config-google": "^0.8.0",
-    "eslint-loader": "^1.6.0",
+    "eslint-loader": "^1.8.0",
     "eslint-plugin-jasmine": "^2.2.0",
     "html-loader": "^0.4.4",
     "isparta-loader": "^2.0.0",
