@@ -1,6 +1,6 @@
 # Salte Filter
 
-[![Slack Status][slack-image]][slack-url]
+[![Gitter][gitter-image]][gitter-url]
 [![NPM Version][npm-version-image]][npm-url]
 [![NPM Downloads][npm-downloads-image]][npm-url]
 [![Travis][travis-ci-image]][travis-ci-url]
@@ -130,8 +130,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[slack-image]: https://salte-slack.herokuapp.com/badge.svg
-[slack-url]: https://salte-slack.herokuapp.com/
+[gitter-image]: https://badges.gitter.im/salte-io/salte-filter.svg
+[gitter-url]: https://gitter.im/salte-io/salte-filter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
 
 [npm-version-image]: http://img.shields.io/npm/v/salte-filter.svg?style=flat
 [npm-downloads-image]: http://img.shields.io/npm/dm/salte-filter.svg?style=flat

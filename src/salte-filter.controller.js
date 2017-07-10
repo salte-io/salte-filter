@@ -26,6 +26,9 @@ export default class SalteFilter {
       });
     }
     this.listeners.forEach((listener) => listener(this.filteredData));
+    this.onFilter({
+      filteredData: this.filteredData
+    });
   }
 
   addFilter(filter) {
