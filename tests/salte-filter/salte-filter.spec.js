@@ -7,7 +7,14 @@ describe('component(salte-filter)', () => {
   beforeEach(angular.mock.inject(($compile, $rootScope) => {
     scope = $rootScope.$new();
     scope.data = [{ business: 'Salte' }, { business: 'Google' }];
-    component = $compile('<salte-filter data="data" filtered-data="filteredData"></salte-filter>')(scope);
+    scope.onFilter = sinon.spy();
+    component = $compile(`
+      <salte-filter
+        data="data"
+        filtered-data="filteredData"
+        on-filter="onFilter(filteredData)">
+      </salte-filter>
+    `)(scope);
     controller = component.controller('salteFilter');
     scope.$digest();
   }));
@@ -55,6 +62,30 @@ describe('component(salte-filter)', () => {
       controller.removeFilterListener(listener);
       controller.filter();
       expect(listener.callCount).toEqual(1);
+    });
+  });
+
+  describe('binding(onFilter)', () => {
+    it('should call onFilter initially', () => {
+      expect(scope.onFilter.callCount).toEqual(1);
+      expect(scope.onFilter.calledWith(scope.filteredData)).toEqual(true);
+    });
+
+    it('should call onFilter when filter() is called', () => {
+      expect(scope.onFilter.callCount).toEqual(1);
+      expect(scope.onFilter.calledWith(scope.filteredData)).toEqual(true);
+      controller.filter();
+      expect(scope.onFilter.callCount).toEqual(2);
+      expect(scope.onFilter.calledWith(scope.filteredData)).toEqual(true);
+    });
+
+    it('should call onFilter when data is changed', () => {
+      expect(scope.onFilter.callCount).toEqual(1);
+      expect(scope.onFilter.calledWith(scope.filteredData)).toEqual(true);
+      scope.data = [{ restaurant: 'Taco Bell' }];
+      scope.$digest();
+      expect(scope.onFilter.callCount).toEqual(2);
+      expect(scope.onFilter.calledWith(scope.filteredData)).toEqual(true);
     });
   });
 });
