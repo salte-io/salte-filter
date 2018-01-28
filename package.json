@@ -20,16 +20,9 @@
     "url": "https://github.com/salte-io/salte-filter.git"
   },
   "scripts": {
-    "lint": "eslint src/**/*.js tests/**/*.js",
-    "test": "karma start --single-run",
-    "test:sauce": "karma start karma.ci.conf.js",
-    "tdd": "karma start",
-    "build": "npm run build:dev && npm run build:prod",
-    "build:dev": "webpack --progress --colors -d",
-    "build:prod": "webpack --progress --colors -p",
-    "report-coverage": "coveralls < coverage/lcov.info",
-    "publish-latest": "publish-latest --user-email bot@salte.io --user-name salte-bot",
-    "semantic-release": "semantic-release pre && npm run build && npm publish && npm run publish-latest && semantic-release post",
+    "start": "nps",
+    "prepublishOnly": "yarn start build",
+    "postpublish": "publish-latest --user-email bot@salte.io --user-name salte-bot",
     "precommit": "remove-lockfiles"
   },
   "license": "MIT",
@@ -63,10 +56,11 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-spec-reporter": "^0.0.32",
     "karma-webpack": "^2.0.2",
+    "nps": "^5.7.1",
     "phantomjs-prebuilt": "^2.1.13",
     "publish-latest": "^1.1.2",
     "remove-lockfiles": "^2.0.4",
-    "semantic-release": "^8.0.0",
+    "semantic-release": "^12.0.0",
     "sinon": "^4.0.0",
     "webpack": "^3.0.0",
     "yargs": "^11.0.0"
