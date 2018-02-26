@@ -2,14 +2,14 @@ const path = require('path');
 const webpack = require('webpack');
 const deindent = require('deindent');
 const packageJson = require('./package.json');
-const args = require('yargs').argv;
+const { argv: args } = require('yargs');
 
-const isProd = args.p;
+const isProd = args.mode === 'production';
 
 module.exports = {
   context: path.join(__dirname, 'src'),
   entry: {
-    'salte-filter': './salte-filter.module.js'
+    'salte-filter': ['./salte-filter.module.js']
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -19,17 +19,12 @@ module.exports = {
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
-  externals: [{
-    angular: 'angular'
-  }],
+  externals: {
+    'angular': 'angular'
+  },
   devtool: 'source-map',
   module: {
     rules: [{
-      enforce: 'pre',
-      test: /\.js$/,
-      exclude: /node_modules/,
-      loader: 'eslint-loader'
-    }, {
       test: /\.js$/,
       exclude: /node_modules/,
       loader: 'babel-loader'
@@ -38,6 +33,9 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'html-loader'
     }]
+  },
+  optimization: {
+    minimize: isProd ? true : false
   },
   plugins: [
     new webpack.BannerPlugin({
