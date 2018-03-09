@@ -22,7 +22,6 @@
   "scripts": {
     "start": "nps",
     "prepublishOnly": "yarn start build",
-    "postpublish": "publish-latest --user-email bot@salte.io --user-name salte-bot",
     "precommit": "remove-lockfiles"
   },
   "license": "MIT",
@@ -59,9 +58,8 @@
     "mocha": "^5.0.0",
     "nps": "^5.7.1",
     "phantomjs-prebuilt": "^2.1.13",
-    "publish-latest": "^1.1.2",
     "remove-lockfiles": "^2.0.4",
-    "semantic-release": "^12.0.0",
+    "semantic-release": "^15.0.0",
     "sinon": "^4.0.0",
     "webpack": "^4.0.0",
     "yargs": "^11.0.0"
