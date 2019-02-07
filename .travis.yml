@@ -1,9 +1,7 @@
 sudo: false
 language: node_js
 node_js: stable
-cache:
-  directories:
-    - node_modules
+cache: npm
 branches:
   only:
     - master
@@ -15,5 +13,7 @@ script:
 after_success:
   - npm start report-coverage
   - npm start semantic-release
+addons:
+  sauce_connect: true
 notifications:
   email: change
