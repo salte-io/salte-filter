@@ -1,6 +1,5 @@
 # Salte Filter
 
-[![Gitter][gitter-image]][gitter-url]
 [![NPM Version][npm-version-image]][npm-url]
 [![NPM Downloads][npm-downloads-image]][npm-url]
 [![Travis][travis-ci-image]][travis-ci-url]
@@ -104,41 +103,15 @@ const component = {
 ```
 
 ### `filter`
+
 Runs all of the filters, useful for triggering a filter when an input value is changed
-
-## License
-
-The MIT License
-
-Copyright (c) 2016 Salte. https://www.salte.io
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-
-[gitter-image]: https://badges.gitter.im/salte-io/salte-filter.svg
-[gitter-url]: https://gitter.im/salte-io/salte-filter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
 
 [npm-version-image]: http://img.shields.io/npm/v/salte-filter.svg?style=flat
 [npm-downloads-image]: http://img.shields.io/npm/dm/salte-filter.svg?style=flat
 [npm-url]: https://npmjs.org/package/salte-filter
 
-[travis-ci-image]: https://img.shields.io/travis/salte-io/salte-filter.svg?style=flat
-[travis-ci-url]: https://travis-ci.org/salte-io/salte-filter
+[travis-ci-image]: https://img.shields.io/travis/com/salte-io/salte-filter.svg?style=flat
+[travis-ci-url]: https://travis-ci.com/salte-io/salte-filter
 
 [coveralls-image]: https://img.shields.io/coveralls/salte-io/salte-filter/master.svg
 [coveralls-url]: https://coveralls.io/github/salte-io/salte-filter
