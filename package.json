@@ -35,17 +35,16 @@
     "babel-loader": "^8.0.5",
     "chai": "^4.2.0",
     "coveralls": "^3.0.2",
-    "cz-conventional-changelog": "^2.1.0",
     "deindent": "^0.1.0",
-    "eslint": "^5.13.0",
+    "eslint": "^6.0.0",
     "eslint-config-google": "^0.13.0",
-    "eslint-plugin-mocha": "^5.2.1",
+    "eslint-plugin-mocha": "^6.0.0",
     "html-loader": "^0.5.5",
-    "husky": "^2.0.0",
+    "husky": "^3.0.0",
     "istanbul-instrumenter-loader": "^3.0.1",
     "karma": "^4.0.0",
-    "karma-chrome-launcher": "^2.2.0",
-    "karma-coverage": "^1.1.2",
+    "karma-chrome-launcher": "^3.0.0",
+    "karma-coverage": "^2.0.0",
     "karma-mocha": "^1.3.0",
     "karma-mocha-reporter": "^2.2.5",
     "karma-sauce-launcher": "^2.0.2",
@@ -60,16 +59,11 @@
     "sinon": "^7.2.3",
     "webpack": "^4.29.1",
     "webpack-cli": "^3.2.3",
-    "yargs": "^13.1.0"
+    "yargs": "^14.0.0"
   },
   "jspm": {
     "peerDependencies": {
       "angular": "*"
-    }
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
     }
   },
   "husky": {
