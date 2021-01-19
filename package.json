@@ -34,7 +34,6 @@
     "@babel/preset-env": "^7.3.1",
     "babel-loader": "^8.0.5",
     "chai": "^4.2.0",
-    "coveralls": "^3.0.2",
     "deindent": "^0.1.0",
     "eslint": "^7.0.0",
     "eslint-config-google": "^0.14.0",

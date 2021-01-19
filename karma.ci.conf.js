@@ -4,46 +4,49 @@ module.exports = function(config) {
   const customLaunchers = {
     ChromeBeta: {
       base: 'SauceLabs',
-      platformName: 'Windows 10',
+      platform: 'Windows 10',
       browserName: 'chrome',
       version: 'beta'
     },
     Chrome: {
       base: 'SauceLabs',
-      platformName: 'Windows 10',
-      browserName: 'chrome'
+      platform: 'Windows 10',
+      browserName: 'chrome',
+      version: 'latest'
     },
     Firefox: {
       base: 'SauceLabs',
-      platformName: 'Windows 10',
-      browserName: 'firefox'
+      platform: 'Windows 10',
+      browserName: 'firefox',
+      version: 'latest'
     },
     Edge: {
       base: 'SauceLabs',
-      platformName: 'Windows 10',
-      browserName: 'microsoftedge'
+      platform: 'Windows 10',
+      browserName: 'microsoftedge',
+      version: 'latest'
     },
     InternetExplorer11: {
       base: 'SauceLabs',
-      platformName: 'Windows 10',
+      platform: 'Windows 10',
       browserName: 'internet explorer',
       version: '11'
     },
-    Safari10: {
-      base: 'SauceLabs',
-      platformName: 'macOS 10.15',
-      browserName: 'safari',
-      version: '10'
-    },
+    // Safari10: {
+    //   base: 'SauceLabs',
+    //   platform: 'macOS 10.15',
+    //   browserName: 'safari',
+    //   version: '10'
+    // },
     Safari9: {
       base: 'SauceLabs',
-      platformName: 'OS X 10.11',
+      platform: 'OS X 10.11',
       browserName: 'safari',
       version: '9'
     },
     Safari8: {
       base: 'SauceLabs',
-      platformName: 'OS X 10.10',
+      platform: 'OS X 10.10',
       browserName: 'safari',
       version: '8'
     }
