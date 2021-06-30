@@ -6,7 +6,7 @@
   "homepage": "https://github.com/salte-io/salte-filter",
   "bugs": "https://github.com/salte-io/salte-filter/issues",
   "contributors": [
-    "Nick Woodward <nick@salte.io>"
+    "Cecilia Woodward <ceci@salte.io>"
   ],
   "keywords": [
     "angular",
@@ -28,19 +28,19 @@
     "angular": "^1.5.0"
   },
   "devDependencies": {
-    "angular": "^1.7.7",
-    "angular-mocks": "^1.7.7",
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
+    "@jsdevtools/coverage-istanbul-loader": "^3.0.5",
+    "angular": "^1.7.7",
+    "angular-mocks": "^1.7.7",
     "babel-loader": "^8.0.5",
     "chai": "^4.2.0",
     "deindent": "^0.1.0",
     "eslint": "^7.0.0",
     "eslint-config-google": "^0.14.0",
-    "eslint-plugin-mocha": "^8.0.0",
-    "html-loader": "^1.1.0",
-    "husky": "^4.0.2",
-    "istanbul-instrumenter-loader": "^3.0.1",
+    "eslint-plugin-mocha": "^9.0.0",
+    "html-loader": "^2.0.0",
+    "husky": "^6.0.0",
     "karma": "^6.0.0",
     "karma-chrome-launcher": "^3.0.0",
     "karma-coverage": "^2.0.0",
@@ -51,14 +51,14 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-spec-reporter": "^0.0.32",
     "karma-webpack": "^5.0.0-alpha.5",
-    "mocha": "^8.0.1",
+    "mocha": "^9.0.0",
     "nps": "^5.9.3",
     "remove-lockfiles": "^2.1.3",
     "semantic-release": "^17.0.0",
-    "sinon": "^9.0.0",
+    "sinon": "^11.0.0",
     "webpack": "^5.15.0",
     "webpack-cli": "^4.0.0",
-    "yargs": "^16.0.3"
+    "yargs": "^17.0.0"
   },
   "jspm": {
     "peerDependencies": {
