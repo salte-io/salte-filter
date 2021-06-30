@@ -21,12 +21,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14
-      - uses: saucelabs/sauce-connect-action@v1
-        with:
-            username: ${{ secrets.SAUCE_USERNAME }}
-            accessKey: ${{ secrets.SAUCE_ACCESS_KEY }}
-            tunnelIdentifier: salte-io/salte-filter
-            scVersion: 4.6.2
       - name: Cache node modules
         uses: actions/cache@v2
         with:
