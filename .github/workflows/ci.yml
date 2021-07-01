@@ -92,7 +92,8 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
-  Release:
+  release:
+    name: Release
     runs-on: ubuntu-18.04
     needs: [browserstack, validate]
     if: github.ref == 'refs/heads/master'
