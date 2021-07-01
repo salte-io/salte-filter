@@ -2,11 +2,10 @@
 
 [![NPM Version][npm-version-image]][npm-url]
 [![NPM Downloads][npm-downloads-image]][npm-url]
-[![Travis][travis-ci-image]][travis-ci-url]
+[![CI Build][github-actions-image]][github-actions-url]
 [![Coveralls][coveralls-image]][coveralls-url]
 
 [![semantic-release][semantic-release-image]][semantic-release-url]
-[![Greenkeeper badge][greenkeeper-image]][greenkeeper-url]
 
 Registers filter components allowing for a single input and output!
 
@@ -105,21 +104,15 @@ const component = {
 
 Runs all of the filters, useful for triggering a filter when an input value is changed
 
-[npm-version-image]: http://img.shields.io/npm/v/salte-filter.svg?style=flat
-[npm-downloads-image]: http://img.shields.io/npm/dm/salte-filter.svg?style=flat
+[npm-version-image]: https://img.shields.io/npm/v/salte-filter.svg?style=flat
+[npm-downloads-image]: https://img.shields.io/npm/dm/salte-filter.svg?style=flat
 [npm-url]: https://npmjs.org/package/salte-filter
 
-[travis-ci-image]: https://img.shields.io/travis/com/salte-io/salte-filter.svg?style=flat
-[travis-ci-url]: https://travis-ci.com/salte-io/salte-filter
+[github-actions-image]: https://github.com/salte-auth/salte-auth/actions/workflows/ci.yml/badge.svg?branch=master
+[github-actions-url]: https://github.com/salte-auth/salte-auth/actions/workflows/ci.yml
 
 [coveralls-image]: https://img.shields.io/coveralls/salte-io/salte-filter/master.svg
 [coveralls-url]: https://coveralls.io/github/salte-io/salte-filter
 
-[commitizen-image]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
-[commitizen-url]: http://commitizen.github.io/cz-cli/
-
 [semantic-release-url]: https://github.com/semantic-release/semantic-release
 [semantic-release-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
-
-[greenkeeper-image]: https://badges.greenkeeper.io/salte-io/salte-filter.svg
-[greenkeeper-url]: https://greenkeeper.io

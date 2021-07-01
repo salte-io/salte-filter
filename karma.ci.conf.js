@@ -2,53 +2,12 @@ const webpackConfig = require('./webpack.test.config.js');
 
 module.exports = function(config) {
   const customLaunchers = {
-    // ChromeBeta: {
-    //   base: 'SauceLabs',
-    //   platform: 'Windows 10',
-    //   browserName: 'chrome',
-    //   version: 'beta'
-    // },
-    // Chrome: {
-    //   base: 'SauceLabs',
-    //   platform: 'Windows 10',
-    //   browserName: 'chrome',
-    //   version: 'latest'
-    // },
-    // Firefox: {
-    //   base: 'SauceLabs',
-    //   platform: 'Windows 10',
-    //   browserName: 'firefox',
-    //   version: 'latest'
-    // },
-    // Edge: {
-    //   base: 'SauceLabs',
-    //   platform: 'Windows 10',
-    //   browserName: 'microsoftedge',
-    //   version: 'latest'
-    // },
-    // InternetExplorer11: {
-    //   base: 'SauceLabs',
-    //   platform: 'Windows 10',
-    //   browserName: 'internet explorer',
-    //   version: '11'
-    // },
-    // Safari10: {
-    //   base: 'SauceLabs',
-    //   platform: 'macOS 10.15',
-    //   browserName: 'safari',
-    //   version: '10'
-    // },
-    Safari9: {
-      base: 'SauceLabs',
-      platform: 'OS X 10.11',
-      browserName: 'safari',
-      version: '9'
-    },
-    Safari8: {
-      base: 'SauceLabs',
-      platform: 'OS X 10.10',
-      browserName: 'safari',
-      version: '8'
+    InternetExplorer11: {
+      base: 'BrowserStack',
+      browser: 'IE',
+      browser_version: '11',
+      os: 'Windows',
+      os_version: '10'
     }
   };
 
@@ -76,7 +35,7 @@ module.exports = function(config) {
       stats: 'errors-only'
     },
 
-    reporters: ['mocha', 'saucelabs'],
+    reporters: ['mocha', 'BrowserStack'],
 
     mochaReporter: {
       showDiff: true
@@ -87,11 +46,6 @@ module.exports = function(config) {
     colors: true,
 
     logLevel: config.LOG_INFO,
-
-    sauceLabs: {
-      testName: 'salte-io/salte-filter',
-      startConnect: false
-    },
 
     customLaunchers: customLaunchers,
     browsers: Object.keys(customLaunchers),

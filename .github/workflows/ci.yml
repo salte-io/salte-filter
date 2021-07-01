@@ -9,7 +9,8 @@ on:
       - master
 
 jobs:
-  Install:
+  install:
+    name: Install
     runs-on: ubuntu-18.04
 
     steps:
@@ -32,10 +33,11 @@ jobs:
         run: npm i
 
 
-  Tests-Sauce:
+  browserstack:
+    name: Browserstack
     runs-on: ubuntu-18.04
     if: github.ref == 'refs/heads/master'
-    needs: Install
+    needs: install
 
     steps:
       - name: Checkout
@@ -53,16 +55,19 @@ jobs:
           key: ${{ runner.os }}-node--${{ hashFiles('package.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
+      - run: ls
+      - run: cat babel.config.json
       - name: Run Tests
         if: github.ref == 'refs/heads/master'
         env:
-          SAUCE_USERNAME: salte-io
-          SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_ACCESS_KEY }}
-        run: npm start test.sauce
+          BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
+          BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+        run: npm start test.ci
 
-  Tests-Coverage:
+  validate:
+    name: Validate
     runs-on: ubuntu-18.04
-    needs: Install
+    needs: install
 
     steps:
       - name: Checkout
@@ -89,7 +94,7 @@ jobs:
 
   Release:
     runs-on: ubuntu-18.04
-    needs: [Tests-Sauce, Tests-Coverage]
+    needs: [browserstack, validate]
     if: github.ref == 'refs/heads/master'
 
     steps:
