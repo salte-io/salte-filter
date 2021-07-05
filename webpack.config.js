@@ -43,7 +43,7 @@ module.exports = {
         /**
          * ${packageJson.name} JavaScript Library v${packageJson.version}
          *
-         * @license MIT (https://github.com/salte-io/salte-auth/blob/master/LICENSE)
+         * @license MIT (https://github.com/salte-io/salte-auth/blob/main/LICENSE)
          *
          * Made with ♥ by ${packageJson.contributors.join(', ')}
          */

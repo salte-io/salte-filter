@@ -108,10 +108,10 @@ Runs all of the filters, useful for triggering a filter when an input value is c
 [npm-downloads-image]: https://img.shields.io/npm/dm/salte-filter.svg?style=flat
 [npm-url]: https://npmjs.org/package/salte-filter
 
-[github-actions-image]: https://github.com/salte-io/salte-filter/actions/workflows/ci.yml/badge.svg?branch=master
+[github-actions-image]: https://github.com/salte-io/salte-filter/actions/workflows/ci.yml/badge.svg?branch=main
 [github-actions-url]: https://github.com/salte-io/salte-filter/actions/workflows/ci.yml
 
-[coveralls-image]: https://img.shields.io/coveralls/salte-io/salte-filter/master.svg
+[coveralls-image]: https://img.shields.io/coveralls/salte-io/salte-filter/main.svg
 [coveralls-url]: https://coveralls.io/github/salte-io/salte-filter
 
 [semantic-release-url]: https://github.com/semantic-release/semantic-release
