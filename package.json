@@ -37,7 +37,7 @@
     "babel-loader": "^8.0.5",
     "chai": "^4.2.0",
     "deindent": "^0.1.0",
-    "eslint": "^7.0.0",
+    "eslint": "^8.8.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-mocha": "^9.0.0",
     "html-loader": "^2.0.0",
